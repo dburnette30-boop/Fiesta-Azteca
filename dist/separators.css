@@ -1,0 +1,7 @@
+/* Tiny blue agave plants replace the decorative tile separators. */
+:root{--agave-separator:url('assets/agave-divider.webp') center/34px 28px repeat-x #b9dbea}
+.woven,.review-rest .woven,.menu-document>.woven{height:32px!important;border:0!important;border-block:1px solid #b88b48!important;background:var(--agave-separator)!important;box-shadow:none!important}
+.experience,.visit{position:relative;border-image:none!important;border-top:32px solid transparent!important;border-bottom:32px solid transparent!important}
+.experience::before,.experience::after,.visit::before,.visit::after{content:"";position:absolute;left:0;right:0;height:32px;background:var(--agave-separator);border-block:1px solid #b88b48;box-sizing:border-box;pointer-events:none;z-index:2}
+.experience::before,.visit::before{top:-32px}
+.experience::after,.visit::after{bottom:-32px}

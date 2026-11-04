@@ -1,0 +1,27 @@
+
+.review-tile-border{height:34px;border-block:4px solid #b88b48;background-color:#faf3df;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='28' viewBox='0 0 60 28'%3E%3Cpath d='M0 14 14 0 28 14 14 28Z' fill='%23174c3c'/%3E%3Cpath d='m14 6 8 8-8 8-8-8Z' fill='%23faf3df'/%3E%3Cpath d='M32 14 44 2 56 14 44 26Z' fill='%23a7392e'/%3E%3Cpath d='m44 9 5 5-5 5-5-5Z' fill='%23faf3df'/%3E%3C/svg%3E")}
+.review-table{background:#174c3c;color:#fffdf7;padding:110px 8%;font-family:'DM Sans',Arial,sans-serif;overflow:hidden}
+.review-table .section-heading{position:relative;isolation:isolate;min-height:400px;display:flex;align-items:flex-end;justify-content:space-between;gap:50px;margin-bottom:55px}
+.review-table .section-heading::before{content:"";position:absolute;inset:-60px -5vw -20px;z-index:-1;pointer-events:none;background:linear-gradient(to bottom,#174c3c12 0%,#174c3c26 28%,#174c3c80 58%,#174c3c 100%),url('assets/review-table-background.webp') center 24%/cover no-repeat}
+.review-table .section-heading h2,.review-table .section-heading p{text-shadow:0 2px 10px #102b2499}
+.review-table .eyebrow{font-family:'Rye',Georgia,serif;font-size:clamp(24px,2.5vw,36px);font-weight:400;color:#f5d28f;text-shadow:2px 3px 0 #4b171a;letter-spacing:1px;line-height:1.25;margin:0 0 24px}
+.review-table h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(50px,5.8vw,86px);line-height:.94;letter-spacing:-2px;margin:0}
+.review-table h2 em{font-family:inherit;font-weight:500;color:#b88b48;letter-spacing:-2px}
+.review-table .section-heading>p{font-size:clamp(22px,2.1vw,28px);line-height:1.6;color:#e0e9df;max-width:460px;margin:0 0 6px}
+.review-table .food-grid{display:grid;grid-template-columns:1fr;gap:50px}
+.review-table .food-card:nth-child(2){padding-top:15px}
+.review-table .photo-button{position:relative;display:block;width:100%;padding:0;overflow:hidden;border:0;border-radius:180px 180px 4px 4px;background:#252a23;color:white;cursor:zoom-in}
+.review-table .photo-button img{width:100%;height:auto;aspect-ratio:1.3;object-fit:cover;transition:transform .6s}
+.review-table .photo-button:hover img{transform:scale(1.04)}
+.review-table .photo-button span{position:absolute;bottom:17px;right:18px;font-size:14px;letter-spacing:1px;background:#171c17c9;padding:12px 16px}
+.review-table .card-title{margin-top:26px}
+.review-table .card-title>span{font-size:10px;color:#b88b48;letter-spacing:2px}
+.review-table h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(40px,4vw,54px);line-height:1.08;letter-spacing:-2px;margin:0}
+.review-table .food-card p{font-size:clamp(20px,1.8vw,25px);color:#e0e9df;line-height:1.6;margin:1em 0}
+#food-lightbox{padding:46px 20px 20px;background:#19231d;color:#f2ecdc;border:1px solid #b88b48;max-width:min(94vw,1200px);max-height:94dvh}
+#food-lightbox::backdrop{background:#000c}
+#food-lightbox img{max-height:75dvh;width:100%;object-fit:contain}
+#food-lightbox button{position:absolute;right:4px;top:0;min-width:48px;min-height:44px;font-size:28px;background:transparent;color:white;border:0;cursor:pointer}
+#food-lightbox p{padding-top:12px;line-height:1.5}
+@media(max-width:760px){.review-table{padding:58px 6%}.review-table .section-heading{min-height:460px;flex-direction:column;justify-content:flex-end;align-items:flex-start;gap:0;margin-bottom:30px}.review-table .section-heading::before{inset:-24px -5vw 0;background-size:auto 100%;background-position:center top}.review-table .section-heading>p{font-size:21px;line-height:1.55;margin-top:24px}.review-table .eyebrow{font-size:28px;letter-spacing:.5px}.review-table h2{font-size:clamp(44px,11vw,64px);line-height:1.04;letter-spacing:-1px}.review-table .food-grid{gap:36px}.review-table .food-card:nth-child(2){padding-top:0}.review-table h3{font-size:clamp(34px,9vw,46px)}.review-table .food-card p{font-size:20px}.review-table .card-title{margin-top:20px}}
+@media(prefers-reduced-motion:reduce){.review-table .photo-button img{transition:none}}

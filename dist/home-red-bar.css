@@ -1,0 +1,7 @@
+/* Gold flavor bar beneath the homepage video. */
+.flavor-strip{background:linear-gradient(115deg,#edca7b,#d3a553 60%,#e9bc60);color:#102b40;box-shadow:inset 0 5px 0 #a97a31,inset 0 6px 0 #f6dda4,inset 0 -5px 0 #a97a31,inset 0 -6px 0 #f6dda4}
+.flavor-strip::before{border-color:#102b4066}
+.flavor-item:not(:last-child){border-right-color:#102b4055}
+.flavor-item:not(:last-child)::after{background:#dfb260;color:#102b40}
+.flavor-icon{color:#102b40;border-color:#102b4077;background:#fff5d51f;box-shadow:0 0 0 4px #102b400a}
+.flavor-label small{color:#183c52}

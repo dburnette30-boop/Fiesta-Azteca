@@ -1,0 +1,3 @@
+/* Match From the Table to the header palette, retaining its soft shading. */
+.review-rest #table.flavors,.review-rest #cantina.cantina,.review-rest #experience.experience{background:radial-gradient(ellipse at 15% 10%,#38789855,transparent 55%),linear-gradient(115deg,#0b2235,#173f59 55%,#0b2235)}
+.review-rest #table.flavors .section-heading::before{background-image:linear-gradient(to bottom,#173f5912 0%,#173f5926 28%,#173f5980 58%,#173f59 100%),url('assets/mariachi-guitar-closeup.webp')}

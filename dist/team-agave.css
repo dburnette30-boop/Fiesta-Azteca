@@ -1,0 +1,8 @@
+/* A blue agave setting that keeps the team at the center. */
+body.team-agave{position:relative;isolation:isolate;background:#102f47;color:#f5ebd7;background-image:radial-gradient(ellipse at 50% 52%,#284f6570,transparent 70%)}
+.team-agave::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:url('assets/agave-divider.webp') left -36px bottom -26px/260px 260px no-repeat,url('assets/agave-divider.webp') right -36px bottom -26px/260px 260px no-repeat;opacity:.18}
+.team-agave .our-team-page{background:transparent}
+.team-agave .our-team-page>.eyebrow{color:#e5bf79}
+.team-agave .our-team-page .menu-intro{color:#f5ebd7}
+.team-agave .team-photo{border-color:#d5ae62;box-shadow:0 0 44px 12px #e2b65b24,0 0 110px 38px #e2b65b12,0 14px 34px #04152266}
+@media(max-width:600px){.team-agave::before{background-size:160px 160px;background-position:left -35px bottom -14px,right -35px bottom -14px;opacity:.15}.team-agave .team-photo{box-shadow:0 0 32px 8px #e2b65b24,0 10px 24px #04152266}}

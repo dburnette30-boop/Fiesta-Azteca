@@ -1,0 +1,9 @@
+/* Keep celebration photos together in a compact, even grid. */
+.cinco-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));columns:auto;gap:10px;margin:24px 0}
+.cinco-photos .photo-button{display:block;min-width:0;width:100%;margin:0;border:2px solid #b88b48;border-radius:8px;overflow:hidden}
+.cinco-photos .photo-button img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.cinco-photos .photo-button span{font-size:9px;padding:6px 8px;right:5px;bottom:5px}
+@media(max-width:760px){.cinco-photos{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:20px 0}.cinco-photos .photo-button span{font-size:8px;padding:4px 6px}}
+
+/* Match the shared navy blue page palette. */
+body.cinco-celebration{background:radial-gradient(ellipse at 15% 10%,#38789855,transparent 55%),linear-gradient(115deg,#0b2235,#173f59 55%,#0b2235);background-attachment:fixed}

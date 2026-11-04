@@ -1,0 +1,6 @@
+/* A compact Facebook section with larger regular text. */
+.review-rest .social-band{padding:30px 6% 28px}
+.review-rest .social-band>.eyebrow{display:block;margin-bottom:16px;font-size:13px}
+.review-rest .social-band p{font-size:23px;line-height:1.5;margin:14px 0 18px}
+.review-rest .facebook-corner-logo{top:22px;width:44px;height:44px}
+@media(max-width:760px){.review-rest .social-band{padding:30px 6% 28px}.review-rest .social-band>.eyebrow{font-size:10px;letter-spacing:1.3px;margin-bottom:16px}.review-rest .facebook-corner-logo{top:20px;left:5%;width:30px;height:30px}.review-rest .social-band p{font-size:20px;line-height:1.5}}

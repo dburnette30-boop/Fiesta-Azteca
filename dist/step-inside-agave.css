@@ -1,0 +1,19 @@
+/* Muted agave blue and a warm glow for the Step inside section. */
+.review-rest .experience{background:linear-gradient(135deg,#355d71,#294b60 70%,#31576b);color:#fff0d6}
+.review-rest .experience .step-photo-frame{background:transparent;filter:none}
+.review-rest .experience .step-photo-frame img{-webkit-mask-image:none;mask-image:none}
+.review-rest .experience .step-photo-panel .step-exterior-copy,.review-rest .experience .gather p{color:#f5ebd7}
+
+/* Match both Step Inside photos to the front-desk photo proportions. */
+.review-rest .experience .step-photo-frame{width:100%;height:auto;aspect-ratio:1514/1039}
+.review-rest .experience .step-photo-frame img{width:100%;height:100%;max-height:none;object-fit:cover;object-position:center}
+
+/* Cream frames for opened Step Inside photos. */
+.review-rest #lightbox{background:#f6edd9;border-color:#f6edd9;color:#102b40}
+.review-rest #lightbox p{color:#102b40}
+.review-rest #lightbox .close{background:#f6edd9;color:#102b40}
+
+/* Equal-size closer-look photos without the old green surrounds. */
+.review-rest .experience .inside-photos .photo-button{width:100%;aspect-ratio:4/3;border:0;border-radius:0;background:transparent;box-shadow:none}
+.review-rest .experience .inside-photos .photo-button img{width:100%;height:100%;max-height:none;aspect-ratio:4/3;object-fit:cover}
+@media(min-width:801px){.review-rest .experience .inside-photos{grid-template-columns:repeat(2,minmax(0,1fr))}}

@@ -1,0 +1,13 @@
+/* House Favorites, styled to match Dave's reference. */
+.house-favorites{background:radial-gradient(ellipse at 50% 25%,#fffbf0,#f6edd9);color:#222015;text-align:center;padding:28px 5% 30px;border-bottom:1px solid #ddc596}
+.favorites-ornament{display:flex;align-items:center;justify-content:center;gap:12px;color:#a8833c;margin:0 auto 3px;max-width:440px}
+.favorites-ornament span{height:1px;background:linear-gradient(90deg,transparent,#a8833c);flex:1}.favorites-ornament span:last-child{transform:rotate(180deg)}.favorites-ornament svg{width:34px;height:27px}
+.house-favorites h2,.house-favorites h3{font-family:Georgia,'Times New Roman',serif!important;color:#211e17!important;text-shadow:none!important;-webkit-text-stroke:0!important;font-weight:700!important;font-style:normal!important;letter-spacing:-.5px!important;line-height:1.1!important}
+.house-favorites h2{font-size:clamp(34px,4vw,52px);margin:0 0 8px}.favorites-tagline{font:600 12px/1.5 Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;margin:0 0 20px}
+.favorites-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1280px;margin:0 auto 20px}.favorite-card{min-width:0;box-shadow:0 2px 5px #9b79400c;padding:0 0 14px}.favorite-card img{display:block;width:100%;height:auto;aspect-ratio:1.85;object-fit:cover;border:1px solid #d4c7a9}.house-favorites h3{font-size:clamp(23px,2.5vw,32px);margin:8px 0 6px}.favorite-card p{font:15px/1.5 Arial,sans-serif;max-width:290px;margin:0 auto;padding:0 12px;color:#4d493d}
+.favorites-menu-link{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:16px 30px;background:linear-gradient(115deg,#ecc66f,#c89338);color:#2e2515;font:700 15px/1.2 Georgia,serif;text-transform:uppercase;letter-spacing:1.4px;border:1px solid #dfb660;box-shadow:0 2px 5px #75501b20}.favorites-menu-link:hover{background:#e7bb61}.favorites-menu-link:focus-visible{outline:3px solid #173f59;outline-offset:4px}
+@media(max-width:600px){.house-favorites{padding:26px 6% 30px}.favorites-tagline{font-size:10px;letter-spacing:1.4px;max-width:300px;margin:0 auto 22px}.favorites-grid{grid-template-columns:1fr;gap:22px;max-width:440px}.house-favorites h3{font-size:28px}.favorite-card p{font-size:16px}.favorites-menu-link{width:100%;max-width:300px}}
+
+/* Carry the same cream tone through the map overlay. */
+.review-rest #visit{background:#f6edd9}
+.review-rest #visit .visit-map-background::after{background:linear-gradient(90deg,#f6edd966,transparent 35%,transparent 75%,#f6edd933)}

@@ -1,0 +1,54 @@
+/* Phone layouts shared by the homepage and all restaurant pages. */
+@media(max-width:760px){
+html,body{max-width:100%;margin:0;overflow-x:clip}body{overflow-x:clip}*,*::before,*::after{box-sizing:border-box}img,video,iframe{max-width:100%}button,a{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.review-header header,.menu-document>header{min-height:88px;height:auto;padding:12px 5%;gap:12px;display:flex;flex-wrap:wrap;align-items:center;position:relative;z-index:10}
+.review-header header .brand,.menu-document>header .brand{order:0;flex:0 1 auto;min-width:0}
+.review-header header .brand-logo,.menu-document>header .brand-logo{width:52px;height:52px}
+.review-header header .brand>span,.menu-document>header .brand>span{display:none}
+.review-header header .header-menu-link,.menu-document>header .header-menu-link{order:1;margin-left:auto;min-height:48px;min-width:88px;padding:12px 24px;font-size:16px}
+.review-header header .menu-toggle,.menu-document>header .menu-toggle{order:2;display:block;min-width:48px;min-height:48px;padding:10px 13px;font-size:20px}
+.review-header header nav,.menu-document>header nav{order:3;position:static;display:none;width:100%;max-height:65dvh;overflow-y:auto;padding:14px;gap:10px;flex-direction:column;align-items:stretch;border-radius:10px;background:#174c3c;box-shadow:none}
+.review-header header nav.open,.menu-document>header nav.open{display:flex}
+.review-header header nav a,.menu-document>header nav a{width:100%;min-height:48px;padding:13px 24px;font-size:16px;white-space:normal}
+.film-hero{height:auto;min-height:calc(100svh - 88px);max-height:none;align-items:center}
+.film-hero .hero-content{padding:50px 6% 128px;min-width:0}
+.film-hero #hero-title{font-size:clamp(32px,10.1vw,60px);line-height:1.15;letter-spacing:-.7px;overflow-wrap:normal}
+.film-hero .hero-content>.kicker{top:0;font-size:12px;line-height:1.65;letter-spacing:.8px;max-width:100%;margin-bottom:24px}
+.film-hero .hero-bottom{display:flex;flex-direction:row;align-items:center;gap:18px;margin-top:28px}
+.film-hero .hero-margarita{width:118px;height:155px;max-width:40%}
+.film-hero .hero-bottom p{font-size:16px;line-height:1.6;min-width:0}
+.film-hero .hero-menu-link{right:6%;bottom:24px;font-size:12px;padding:12px 14px;min-height:48px;max-width:64%}
+.film-hero .hero-caption{left:6%;bottom:24px;max-width:25%;font-size:8px;letter-spacing:.5px;line-height:1.6;min-height:48px}
+.flavor-strip{grid-template-columns:1fr 1fr;gap:22px 8px;padding:25px 5%}
+.flavor-strip .flavor-item{padding:0 4px;gap:10px;min-width:0}.flavor-strip .flavor-icon{width:36px;height:36px;flex-shrink:0}.flavor-strip .flavor-icon svg{width:27px;height:27px}.flavor-strip .flavor-label{font-size:8px;letter-spacing:.4px}.flavor-strip .flavor-label small{font-size:13px}
+.review-rest .section{padding:48px 6%}
+.review-rest .flavors .section-heading{min-height:350px;margin-bottom:30px;justify-content:flex-end}
+.review-rest .flavors .section-heading::before{inset:-20px -6vw 0;background-size:cover;background-position:60% top}
+.review-rest .flavors h2{font-size:clamp(42px,11vw,64px);line-height:1.05;letter-spacing:-1px}
+.review-rest .flavors .section-heading>p{font-size:19px;line-height:1.6}
+.review-rest .food-grid{grid-template-columns:1fr;gap:30px}
+.review-rest .food-card:nth-child(2){padding-top:0}.review-rest .food-card .photo-button{border-radius:100px 100px 5px 5px}.review-rest .food-card h3{font-size:36px}.review-rest .food-card p{font-size:18px;line-height:1.6}
+.review-rest .cantina{grid-template-columns:1fr}
+.review-rest .drink-image img{display:block;width:100%;height:auto;min-height:0;max-height:500px;object-fit:contain;aspect-ratio:auto}
+.review-rest .drink-content{padding:38px 7% 44px}
+.review-rest .drink-content>.eyebrow{font-size:31px}.review-rest .drink-content h2{font-size:clamp(56px,15vw,78px);line-height:1.05;letter-spacing:-1px}.review-rest .drink-content>p:not(.eyebrow){font-size:20px;line-height:1.65}
+.review-rest .experience .section-heading.step-photo-heading{min-height:0;margin-bottom:44px}
+.review-rest .step-photo-grid{grid-template-columns:1fr;gap:38px}
+.review-rest .step-photo-frame{height:auto;min-height:0;max-height:none;margin-bottom:20px}
+.review-rest .step-photo-frame img{width:100%;height:auto;max-height:420px;object-fit:contain}
+.review-rest .step-photo-panel h2{font-size:clamp(40px,11vw,60px);line-height:1.12}
+.review-rest .experience .step-photo-panel .step-exterior-copy{margin:0;max-width:100%;font-size:20px;line-height:1.65}
+.review-rest .atmosphere{grid-template-columns:1fr;gap:34px}.review-rest .inside-photos{grid-template-columns:1fr;gap:20px}.review-rest .inside-photos .photo-button{width:100%}.review-rest .inside-photos img{width:100%;max-height:520px;height:auto;object-fit:contain}.review-rest .gather{padding:10px 0 24px}.review-rest .gather h3{font-size:46px}.review-rest .gather p{font-size:19px;max-width:100%;line-height:1.65}
+.review-rest .social-band{padding:84px 6% 42px}.review-rest .social-band h2{font-size:42px;line-height:1.1}.review-rest .social-band p{font-size:18px;line-height:1.65}
+.review-rest .visit{grid-template-columns:1fr;gap:32px}.review-rest .visit h2{font-size:48px;line-height:1.1}.review-rest .visit-details{gap:28px}.review-rest .visit address{font-size:19px}.review-rest .visit .phone{font-size:28px}.review-rest .visit .visit-intro,.review-rest .visit .visit-details p{font-size:17px}
+.review-rest footer{margin:0;padding:32px 6%;gap:22px}.review-rest footer p{font-size:16px}.review-rest footer>a:not(.brand){font-size:17px;min-height:44px;display:inline-flex;align-items:center}
+.menu-page,.gallery-page,.team-page,.musica-page,.cinco-page{width:100%;max-width:100%;padding-left:5%;padding-right:5%}
+.menu-page h1,.gallery-page h1,.team-page h1,.musica-page h1,.cinco-page h1{font-size:clamp(38px,11vw,58px);line-height:1.12;letter-spacing:-1px;overflow-wrap:break-word}
+.menu-page .menu-intro,.team-page .menu-intro,.musica-page .menu-intro,.cinco-page .menu-intro{font-size:18px;line-height:1.65}
+.gallery-grid{grid-template-columns:1fr!important;columns:1!important;gap:22px}.gallery-grid figure{min-width:0;margin-bottom:22px}.gallery-grid figcaption{font-size:17px;line-height:1.5}.gallery-grid .photo-button img{width:100%;height:auto;object-fit:contain}
+.photo-button span{font-size:11px;line-height:1.4;padding:10px 12px}
+.menu-page img,.musica-photos img,.cinco-photos img{max-width:100%;height:auto}.menu-page a{min-height:44px}.fiesta-video video{display:block;width:100%;height:auto}
+dialog,#lightbox{max-width:calc(100vw - 20px);max-height:calc(100dvh - 24px);padding:48px 12px 16px}dialog img,#lightbox img{max-width:100%;max-height:calc(100dvh - 160px);width:auto;height:auto;margin:auto;object-fit:contain}dialog .close{min-width:48px;min-height:48px;font-size:24px;right:0;top:0}
+}
+@media(max-width:359px){.film-hero .hero-bottom{gap:12px}.film-hero .hero-margarita{width:100px;height:140px}.film-hero .hero-bottom p{font-size:14px}.film-hero .hero-menu-link{font-size:11px}.flavor-strip{gap:20px 5px}.flavor-strip .flavor-icon{display:none}}
+@media(max-width:760px) and (max-height:540px){.film-hero{min-height:600px}}

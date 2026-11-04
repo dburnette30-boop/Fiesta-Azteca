@@ -1,0 +1,7 @@
+@font-face{font-family:'Azteca Script';src:url('assets/fonts/great-vibes.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+/* Flowing gold calligraphy inspired by the Fiesta Azteca artwork. */
+:root{--heading-gold:#e9bc60}
+h1,h2,h3,h4,h5,h6{font-family:'Azteca Script','Snell Roundhand','Brush Script MT',cursive!important;font-weight:400!important;font-style:normal!important;letter-spacing:0!important;line-height:1.2!important;text-transform:none!important;color:var(--heading-gold)!important;text-shadow:0 1px 1px #35200e,0 2px 6px #19170e66!important;-webkit-text-stroke:.2px #8d632c;overflow:visible}
+h1 *,h2 *,h3 *,h4 *,h5 *,h6 *{font-family:inherit!important;font-weight:inherit!important;font-style:normal!important;letter-spacing:inherit!important;color:inherit!important}
+.film-hero #hero-title{font-size:clamp(74px,9vw,132px)}
+@media(max-width:760px){.film-hero #hero-title{font-size:clamp(52px,13vw,84px)}.menu-page h1,.gallery-page h1,.team-page h1,.musica-page h1,.cinco-page h1{font-size:clamp(52px,14vw,74px)}}

@@ -1,0 +1,13 @@
+/* Compact natural-height cards with a little space between gold frames. */
+.gallery-tiles .gallery-grid{column-gap:16px;row-gap:0;grid-auto-rows:1px;align-items:start}
+.gallery-tiles .gallery-grid figure{margin:0;align-self:start;padding:10px 10px 16px;background:var(--heading-gold);border:2px solid var(--heading-gold);border-radius:15px;overflow:hidden}
+.gallery-tiles .gallery-grid figcaption{color:#102b40;text-align:center;margin:12px 8px 0;overflow-wrap:anywhere;text-shadow:none}
+@media(max-width:760px){.gallery-tiles .gallery-grid{display:block}.gallery-tiles .gallery-grid figure{margin:0 0 16px;padding:7px 7px 14px}.gallery-tiles .gallery-grid figure:last-child{margin-bottom:0}}
+
+/* Leave a clear view of the sun above the gallery title. */
+.gallery-tiles::before{top:152px;background-image:linear-gradient(to bottom,#08172500 0%,#0817250a 28%,#08172570 75%),url('assets/gallery-agave-fields.webp');background-position:center top}
+.gallery-tiles .gallery-page{padding-top:140px}
+@media(max-width:1100px){.gallery-tiles::before{top:124px}}
+
+/* Add 20 pixels between the Gallery heading and the photos. */
+.gallery-tiles .gallery-grid{margin-top:56px}

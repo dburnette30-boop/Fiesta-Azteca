@@ -1,0 +1,27 @@
+/* One-shot fajita fire opening; the original home remains underneath. */
+.fajita-opening{position:fixed;inset:0;z-index:1000;background:#130b07;overflow:hidden;opacity:1;transition:opacity 1.2s ease;pointer-events:auto}
+.fajita-opening[hidden]{display:none}
+.fajita-opening.is-clearing{opacity:0;pointer-events:none}
+.fajita-opening__grill{width:100%;height:100%;object-fit:cover;object-position:center 58%;transform:scale(1.025);animation:grill-approach 4.4s linear both}
+.fajita-opening__shade{position:absolute;inset:0;background:linear-gradient(0deg,#12070080,transparent 55%,#09040240)}
+.fajita-opening canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.fajita-opening__skip{position:absolute;right:max(22px,env(safe-area-inset-right));bottom:max(24px,env(safe-area-inset-bottom));padding:12px 19px;border:1px solid #fff8d780;border-radius:30px;background:#180c07a6;color:#fff8e7;font:14px Arial,sans-serif;cursor:pointer;z-index:2}
+.fajita-opening__skip:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.hero-beer.margarita-reveal{animation:margarita-reveal 1.6s ease-out both}
+@keyframes grill-approach{to{transform:scale(1.1)}}
+@keyframes margarita-reveal{from{opacity:.15;filter:blur(7px);transform:scale(.97)}to{opacity:1;filter:blur(0);transform:scale(1)}}
+@media(max-width:600px){.fajita-opening__grill{object-position:50% 58%}}
+@media(prefers-reduced-motion:reduce){.fajita-opening{display:none}.hero-beer.margarita-reveal{animation:none}}
+
+/* Cover the viewport from the first paint, including the scrollbar area. */
+html.intro-pending,html.intro-pending body{overflow:hidden}
+html.intro-pending .fajita-opening[hidden]{display:block}
+.fajita-opening{width:100vw;height:100vh;height:100dvh}
+.fajita-opening__grill{position:absolute;inset:0;max-width:none;min-width:100%;min-height:100%}
+
+/* A broad translucent silver halo follows the glass as the fire clears. */
+.margarita-silver-flash{filter:blur(5px);position:fixed;z-index:1001;pointer-events:none;overflow:visible;opacity:0;animation:silver-glass-flash 3.2s .9s ease-out both}
+.margarita-silver-flash path{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0}
+@keyframes silver-glass-flash{0%{opacity:0}6%{opacity:1}78%{opacity:1}100%{opacity:0}}
+@keyframes silver-glass-trace{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.margarita-silver-flash{display:none}}

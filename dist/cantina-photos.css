@@ -1,0 +1,27 @@
+/* Beer taps lead the Cantina photos, with a smaller margarita below. */
+.review-rest #cantina .cantina-photos{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:24px;padding:28px 28px 32px;background:transparent}
+.review-rest #cantina .cantina-photos img{display:block;width:100%;height:auto;min-height:0;max-height:none;aspect-ratio:auto;object-fit:contain}
+.review-rest #cantina .cantina-photos .cantina-beer-taps{width:100%;max-width:560px}
+.review-rest #cantina .cantina-photos .cantina-margarita{width:230px;max-width:65%}
+@media(max-width:800px){.review-rest #cantina .cantina-photos{padding:24px 24px 10px;max-width:640px;width:100%;margin:auto}.review-rest #cantina .cantina-photos .cantina-margarita{width:210px}}
+@media(max-width:420px){.review-rest #cantina .cantina-photos{gap:20px;padding:20px 16px 8px}.review-rest #cantina .cantina-photos .cantina-margarita{width:180px}}
+
+/* Two margarita photos share the row beneath the beer taps. */
+.review-rest #cantina .cantina-margarita-pair{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;gap:18px;width:100%;max-width:560px}
+.review-rest #cantina .cantina-photos .cantina-margarita-pair img{width:100%;max-width:100%;height:auto;max-height:320px;object-fit:contain}
+@media(max-width:420px){.review-rest #cantina .cantina-margarita-pair{gap:12px}}
+
+/* Match the lower edge of the Cantina graphic to the margarita photo. */
+@media(min-width:801px){
+ .review-rest #cantina .drink-content{margin-bottom:32px}
+ .review-rest #cantina .cantina-photos{justify-content:flex-end}
+}
+
+/* Narrow cream divider enclosed by gold at the bottom of the Cantina. */
+.review-rest #cantina::after{content:"";display:block;grid-column:1/-1;height:20px;box-sizing:border-box;border-top:2px solid #e9bc60;border-bottom:2px solid #e9bc60;background:radial-gradient(ellipse at 50% 25%,#fffbf0,#f6edd9)}
+
+/* Trim the thin black edge baked into the single margarita photo. */
+.review-rest #cantina .cantina-photos .cantina-margarita{border:0;outline:0;box-shadow:none;clip-path:inset(0 2% 1% 2%)}
+
+/* The cocktail video sits directly beneath the taps at the same width. */
+.review-rest #cantina .cantina-photos .cantina-video{display:block;width:100%;max-width:560px;height:auto;aspect-ratio:910/512;object-fit:contain;border:0;outline:0;background:transparent}

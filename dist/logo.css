@@ -1,0 +1,14 @@
+/* Full Fiesta Azteca logo: preserve the complete wide artwork. */
+header .brand, .review-rest header .brand, footer .brand {flex-shrink:0;gap:0}
+header .brand>span, footer .brand>span {display:none}
+header .brand-logo, .review-header header .brand-logo, .menu-document>header .brand-logo, footer .brand-logo {display:block;width:220px;height:auto;max-width:100%;object-fit:contain;border-radius:0}
+.team-home-logo, .menu-document .team-home-logo {width:240px;max-width:75%;border-radius:0;background:transparent;box-shadow:none}
+.team-home-logo img {display:block;width:100%;height:auto;border-radius:0;object-fit:contain}
+.gallery-tiles .team-home-logo {background:transparent;border-radius:0;box-shadow:none}
+@media(max-width:760px) {
+ header .brand-logo, .review-header header .brand-logo, .menu-document>header .brand-logo {width:164px;height:auto}
+ footer .brand-logo {width:220px;height:auto}
+}
+@media(max-width:360px) {
+ header .brand-logo, .review-header header .brand-logo, .menu-document>header .brand-logo {width:120px;height:auto}
+}

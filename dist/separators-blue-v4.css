@@ -1,0 +1,4 @@
+/* Decorative cactus border strips removed. */
+.woven,.review-rest .woven,.menu-document>.woven{display:none!important}
+.experience,.visit{position:relative;border-image:none!important;border-top:0!important;border-bottom:0!important}
+.experience::before,.experience::after,.visit::before,.visit::after{display:none!important;content:none!important}
