@@ -1,5 +1,6 @@
 name: Import and verify complete Azteca version 115
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths: ['.github/workflows/complete-import.yml']
@@ -26,7 +27,7 @@ jobs:
               else:
                   for attempt in range(4):
                       try:
-                          data = urllib.request.urlopen(BASE + path.removeprefix('dist/'), timeout=90).read()
+                          data = urllib.request.urlopen(urllib.request.Request(BASE + path.removeprefix('dist/'), headers={'User-Agent': 'Mozilla/5.0'}), timeout=90).read()
                           break
                       except Exception:
                           if attempt == 3: raise
@@ -48,3 +49,4 @@ jobs:
           git add -A
           git commit -m 'Import and verify complete Fiesta Azteca version 115'
           git push
+
