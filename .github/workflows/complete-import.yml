@@ -1,0 +1,36 @@
+name: Complete website import
+on:
+  push:
+    branches: [main]
+    paths: ['.azteca-upload/**']
+permissions:
+  contents: write
+jobs:
+  restore-video:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Restore original video and clean temporary transfer files
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib, shutil
+          parts = sorted(Path('.azteca-upload').glob('part-*'))
+          assert len(parts) == 8, f'Expected 8 video parts, got {len(parts)}'
+          data = b''.join(p.read_bytes() for p in parts)
+          assert len(data) == 14651422
+          digest = hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
+          assert digest == '01367f9412a13b25f362c4071c5127837158ab43'
+          for name in ['assets/cinco-de-mayo.mp4', 'review/assets/cinco-de-mayo.mp4']:
+              path = Path(name)
+              path.parent.mkdir(parents=True, exist_ok=True)
+              path.write_bytes(data)
+          shutil.rmtree('.azteca-upload')
+          Path('.github/workflows/complete-import.yml').unlink()
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Complete website import with original Cinco de Mayo video'
+          git push
