@@ -7,3 +7,12 @@
 
 /* Match the shared navy blue page palette. */
 body.cinco-celebration{background:radial-gradient(ellipse at 15% 10%,#38789855,transparent 55%),linear-gradient(115deg,#0b2235,#173f59 55%,#0b2235);background-attachment:fixed}
+
+/* Keep the full playing video in the opening view, with the copy below. */
+.cinco-celebration .cinco-page{padding-top:48px}
+.cinco-celebration .cinco-page::before{height:36px;background-size:600px 72px}
+.cinco-celebration .cinco-page>.eyebrow{margin:0 0 8px;font-size:11px;line-height:1.4}
+.cinco-celebration .cinco-page>h1{margin:0 0 12px;font-size:clamp(28px,5vw,48px);line-height:1.15}
+.cinco-celebration .fiesta-video{width:min(100%,calc((100svh - 290px)*1.775));max-width:100%;margin:12px auto 24px}
+.cinco-celebration .fiesta-video video{width:100%;height:auto;max-height:calc(100svh - 290px);object-fit:contain}
+@media(max-height:500px){.cinco-celebration .cinco-page{padding-top:16px}.cinco-celebration .cinco-page::before{display:none}.cinco-celebration .cinco-page>.eyebrow{display:none}.cinco-celebration .cinco-page>h1{font-size:28px}.cinco-celebration .fiesta-video{width:min(100%,calc((100svh - 190px)*1.775))}.cinco-celebration .fiesta-video video{max-height:calc(100svh - 190px)}}
