@@ -453,3 +453,8 @@ footer{background:#ce1126;color:#fffdf7}footer p,footer>small{color:#fff0d6}
 .gallery-tiles .gallery-grid .gallery-photo-only img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
 .gallery-tiles .gallery-grid .gallery-photo-only figcaption{color:var(--heading-gold);margin:12px 8px 0;text-shadow:0 2px 4px #081725}
 @media(max-width:600px){.gallery-tiles .gallery-grid .gallery-photo-only .photo-button{border-width:7px}}
+
+/* Match enlarged gallery frames to the gold gallery cards. */
+.gallery-tiles #lightbox{background:var(--heading-gold);border:2px solid var(--heading-gold);border-radius:15px;color:#102b40}
+.gallery-tiles #lightbox p{color:#102b40}
+.gallery-tiles #lightbox .close{background:var(--heading-gold);color:#102b40}
