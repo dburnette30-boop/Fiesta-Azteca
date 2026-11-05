@@ -22,3 +22,10 @@
 .review-rest .experience .inside-photos.feast-photo-layout{grid-template-columns:1fr}
 .review-rest .experience .inside-photos .table-feast-photo{aspect-ratio:auto;border:7px solid var(--heading-gold);border-radius:15px;overflow:hidden}
 .review-rest .experience .inside-photos .table-feast-photo img{height:auto;aspect-ratio:auto;object-fit:contain}
+
+/* A home logo beneath the decorative sun, in normal flow on every screen. */
+.review-rest .experience .gather{padding-bottom:20px}
+.review-rest .experience .gather-sun{position:static;display:block;margin:20px 0 14px auto}
+.review-rest .experience .gather-home-logo{display:block;width:280px;max-width:100%;margin:0 0 0 auto}
+.review-rest .experience .gather-home-logo img{display:block;width:100%;height:auto;object-fit:contain}
+.review-rest .experience .gather-home-logo:focus-visible{outline:3px solid #e9bc60;outline-offset:6px}
