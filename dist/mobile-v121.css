@@ -1,0 +1,20 @@
+/* Responsive refinements for the restored version 121. */
+@media (max-width:760px){
+  .film-hero .hero-caption{max-width:88%;right:6%;min-height:0;font-size:9px;line-height:1.6}
+  .flavor-strip{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px;padding:28px 5%}
+  .flavor-strip .flavor-item{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:12px;padding:0;text-align:center;border-right:0}
+  .flavor-strip .flavor-item::after{content:none}
+  .flavor-strip .flavor-icon{display:block;width:68px;height:68px;flex:0 0 68px}
+  .flavor-strip .flavor-label{display:block;font-size:10px;line-height:1.5;letter-spacing:.5px}
+  .flavor-strip .flavor-label small{display:block;font-size:15px;line-height:1.5;letter-spacing:0}
+  .review-rest .social-band .whats-happening-title{font-size:clamp(32px,9vw,48px)}
+  .review-rest .visit .visit-tagline{font-size:18px;line-height:1.5;letter-spacing:1px}
+  .review-rest .visit-details{min-width:0}
+  .review-rest footer small{max-width:100%;line-height:1.6}
+  .menu-document .gallery-page>h1{max-width:100%;box-sizing:border-box}
+  header a:focus-visible,header button:focus-visible{outline:3px solid #fff0c5;outline-offset:3px}
+}
+@media (max-width:360px){
+  header .brand{min-width:0}
+  .film-hero .hero-bottom p{font-size:17px;line-height:1.65}
+}
