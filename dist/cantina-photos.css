@@ -32,3 +32,6 @@
 
 /* Chips and salsa fill the lower-left space beneath the cocktail video. */
 .review-rest #cantina .cantina-photos .cantina-chips-salsa{width:100%;max-width:560px;height:auto;aspect-ratio:auto;object-fit:contain;border-radius:14px}
+
+/* Repeat the cream-and-gold page divider above the Facebook section. */
+.review-rest .facebook-page-divider{display:block;width:100%;height:20px;box-sizing:border-box;border-top:2px solid #e9bc60;border-bottom:2px solid #e9bc60;background:radial-gradient(ellipse at 50% 25%,#fffbf0,#f6edd9)}
