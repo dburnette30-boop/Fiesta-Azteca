@@ -17,3 +17,8 @@
 .review-rest .experience .inside-photos .photo-button{width:100%;aspect-ratio:4/3;border:0;border-radius:0;background:transparent;box-shadow:none}
 .review-rest .experience .inside-photos .photo-button img{width:100%;height:100%;max-height:none;aspect-ratio:4/3;object-fit:cover}
 @media(min-width:801px){.review-rest .experience .inside-photos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* One full photograph beside Bring the Whole Table. */
+.review-rest .experience .inside-photos.feast-photo-layout{grid-template-columns:1fr}
+.review-rest .experience .inside-photos .table-feast-photo{aspect-ratio:auto;border:7px solid var(--heading-gold);border-radius:15px;overflow:hidden}
+.review-rest .experience .inside-photos .table-feast-photo img{height:auto;aspect-ratio:auto;object-fit:contain}
