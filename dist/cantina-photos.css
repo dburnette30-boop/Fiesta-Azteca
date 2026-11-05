@@ -25,3 +25,7 @@
 
 /* The cocktail video sits directly beneath the taps at the same width. */
 .review-rest #cantina .cantina-photos .cantina-video{display:block;width:100%;max-width:560px;height:auto;aspect-ratio:910/512;object-fit:contain;border:0;outline:0;background:transparent}
+
+/* Repeat the gold-bar margarita beneath the Cantina introduction. */
+.review-rest #cantina .drink-content .cantina-bottom-margarita{display:block;width:100%;max-width:520px;height:auto;min-height:0;aspect-ratio:auto;object-fit:contain;margin:42px auto 0;border-radius:14px;position:relative;z-index:1}
+@media(max-width:800px){.review-rest #cantina .drink-content .cantina-bottom-margarita{margin-top:30px}}
