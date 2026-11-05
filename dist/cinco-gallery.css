@@ -16,3 +16,15 @@ body.cinco-celebration{background:radial-gradient(ellipse at 15% 10%,#38789855,t
 .cinco-celebration .fiesta-video{width:min(100%,calc((100svh - 290px)*1.775));max-width:100%;margin:12px auto 24px}
 .cinco-celebration .fiesta-video video{width:100%;height:auto;max-height:calc(100svh - 290px);object-fit:contain}
 @media(max-height:500px){.cinco-celebration .cinco-page{padding-top:16px}.cinco-celebration .cinco-page::before{display:none}.cinco-celebration .cinco-page>.eyebrow{display:none}.cinco-celebration .cinco-page>h1{font-size:28px}.cinco-celebration .fiesta-video{width:min(100%,calc((100svh - 190px)*1.775))}.cinco-celebration .fiesta-video video{max-height:calc(100svh - 190px)}}
+
+/* End the opening screen with only the complete celebration tagline. */
+.cinco-opening{height:var(--opening-height,calc(100svh - 180px));display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;gap:12px;margin-bottom:36px}
+.cinco-celebration .cinco-opening>.eyebrow{margin:0;font-size:11px;line-height:1.4}
+.cinco-celebration .cinco-opening>h1{margin:0;font-size:clamp(28px,5vw,48px);line-height:1.15}
+.cinco-celebration .cinco-opening .fiesta-video{display:flex;align-items:center;justify-content:center;width:100%;height:100%;min-height:0;margin:0;border:0;background:transparent;box-shadow:none;overflow:visible}
+.cinco-celebration .cinco-opening .fiesta-video video{display:block;width:auto;height:100%;max-width:100%;max-height:100%;object-fit:contain;border:3px solid #b88b48;border-radius:14px;box-sizing:border-box;background:#12120f}
+.cinco-celebration .cinco-opening>.menu-intro{margin:0;max-width:100%;line-height:1.4}
+@media(max-height:500px){.cinco-opening{gap:6px}.cinco-celebration .cinco-opening>.eyebrow{display:none}.cinco-opening{grid-template-rows:auto minmax(0,1fr) auto}.cinco-celebration .cinco-opening>h1{font-size:28px}}
+
+.cinco-celebration .cinco-opening .fiesta-video{container-type:size}
+.cinco-celebration .cinco-opening .fiesta-video video{width:min(100cqw,calc(100cqh * 1.775));height:auto;aspect-ratio:568/320}
