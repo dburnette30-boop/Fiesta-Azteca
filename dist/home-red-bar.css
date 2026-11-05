@@ -5,3 +5,18 @@
 .flavor-item:not(:last-child)::after{background:#dfb260;color:#102b40}
 .flavor-icon{color:#102b40;border-color:#102b4077;background:#fff5d51f;box-shadow:0 0 0 4px #102b400a}
 .flavor-label small{color:#183c52}
+
+/* Larger circular photographs in the gold flavor bar. */
+.flavor-strip .flavor-icon{flex-shrink:0;overflow:hidden}
+.flavor-icon img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.flavor-item:nth-child(2) .flavor-icon img{object-position:50% 58%}
+.flavor-item:nth-child(3) .flavor-icon img{object-position:88% 50%}
+
+.flavor-strip .flavor-icon{width:88px;height:88px;flex:0 0 88px}
+@media(max-width:1100px){.flavor-strip .flavor-icon{width:72px;height:72px;flex-basis:72px}.flavor-strip .flavor-item{gap:10px;padding-left:8px;padding-right:8px}}
+@media(max-width:760px){.flavor-strip .flavor-icon{width:64px;height:64px;flex-basis:64px}.flavor-strip .flavor-item{gap:8px;padding-left:4px;padding-right:4px}.flavor-strip .flavor-label{min-width:0}}
+@media(max-width:360px){.flavor-strip .flavor-item{flex-direction:column;justify-content:center;text-align:center}}
+
+/* More definition for the taco and a clear view of the restaurant exterior. */
+.flavor-item:first-child .flavor-icon img{filter:brightness(.76) contrast(1.18);object-position:35% 55%}
+.flavor-item:nth-child(4) .flavor-icon img{object-position:50% 25%}
