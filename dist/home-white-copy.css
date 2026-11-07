@@ -1,0 +1,19 @@
+/* More prominent white homepage copy, with room to wrap on small screens. */
+.film-hero .hero-bottom p{font-size:clamp(23px,2.1vw,30px);line-height:1.55;color:#fff9ee;font-weight:500;text-shadow:0 2px 5px #000b}
+.film-hero .hero-caption{font-family:Georgia,serif;font-size:clamp(23px,2.1vw,30px);line-height:1.55;color:#fff9ee;font-weight:500;font-style:normal;letter-spacing:normal;text-transform:none;text-shadow:0 2px 5px #000b;max-width:86%}
+.review-rest #cantina .drink-content>p:not(.eyebrow),
+.review-rest #experience .gather p,
+.review-rest #experience .step-photo-panel .step-exterior-copy,
+.review-rest .social-band p{font-size:clamp(26px,2.5vw,34px);line-height:1.6;color:#fff9ee;font-weight:500;text-shadow:0 1px 3px #06121c66}
+.review-rest #cantina .drink-content>p:not(.eyebrow),
+.review-rest #experience .gather p{max-width:520px}
+.review-rest footer p{font-size:clamp(20px,1.9vw,25px);line-height:1.6;color:#fff9ee}
+@media(max-width:760px){
+ .film-hero .hero-bottom p{font-size:22px;line-height:1.55}
+ .film-hero .hero-caption{font-size:22px;line-height:1.55;max-width:88%;letter-spacing:normal}
+ .review-rest #cantina .drink-content>p:not(.eyebrow),
+ .review-rest #experience .gather p,
+ .review-rest #experience .step-photo-panel .step-exterior-copy,
+ .review-rest .social-band p{font-size:24px;line-height:1.6;max-width:100%}
+ .review-rest footer p{font-size:20px}
+}

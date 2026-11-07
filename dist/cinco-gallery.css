@@ -28,3 +28,9 @@ body.cinco-celebration{background:radial-gradient(ellipse at 15% 10%,#38789855,t
 
 .cinco-celebration .cinco-opening .fiesta-video{container-type:size}
 .cinco-celebration .cinco-opening .fiesta-video video{width:min(100cqw,calc(100cqh * 1.775));height:auto;aspect-ratio:568/320}
+
+/* Undated celebration poster moved from Specials. */
+.cinco-celebration-poster{width:min(100%,520px);margin:32px auto;padding:10px 10px 16px;background:var(--heading-gold);border:2px solid var(--heading-gold);border-radius:15px;overflow:hidden}
+.cinco-celebration-poster .photo-button{display:block;width:100%;margin:0;padding:0;border:2px solid #b88b48;border-radius:10px;overflow:hidden}
+.cinco-celebration-poster figcaption{color:#102b40;text-align:center;margin:12px 8px 0;font:22px/1.4 Georgia,serif}
+@media(max-width:760px){.cinco-celebration-poster{padding:7px 7px 14px}.cinco-celebration-poster figcaption{font-size:18px}}

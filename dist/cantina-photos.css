@@ -35,3 +35,10 @@
 
 /* Repeat the cream-and-gold page divider above the Facebook section. */
 .review-rest .facebook-page-divider{display:block;width:100%;height:20px;box-sizing:border-box;border-top:2px solid #e9bc60;border-bottom:2px solid #e9bc60;background:radial-gradient(ellipse at 50% 25%,#fffbf0,#f6edd9)}
+
+/* Introduce the Cantina before its photos on phones. */
+.review-rest #cantina>.cantina-phone-heading{display:none}
+@media(max-width:760px){
+ .review-rest #cantina>.cantina-phone-heading{display:block;grid-column:1/-1;margin:0;padding:32px 6% 4px;font-family:'Rye',Georgia,serif;font-size:31px;font-weight:400;letter-spacing:1px;line-height:1.25;color:#f5d28f;text-shadow:2px 3px 0 #4b171a;text-align:center}
+ .review-rest #cantina .drink-content>.eyebrow{display:none}
+}

@@ -426,3 +426,8 @@ footer{background:#ce1126;color:#fffdf7}footer p,footer>small{color:#fff0d6}
 .experience{background:#8e3f2d}
 .experience .section-heading::before{opacity:1;background-image:linear-gradient(to bottom,#8e3f2d00 0%,#8e3f2d00 45%,#8e3f2d0d 55%,#8e3f2d66 76%,#8e3f2d 100%),none;-webkit-mask-image:none;mask-image:none}
 .experience .section-heading h2,.experience .section-heading p{text-shadow:0 2px 10px #421f1899}
+
+/* Gold frame for enlarged Musica photos, matching the Gallery. */
+.musica-evening #lightbox{background:var(--heading-gold);border:2px solid var(--heading-gold);border-radius:15px;color:#102b40}
+.musica-evening #lightbox p{color:#102b40}
+.musica-evening #lightbox .close{background:var(--heading-gold);color:#102b40}
