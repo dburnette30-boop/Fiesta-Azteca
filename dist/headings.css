@@ -6,14 +6,16 @@ h1 *,h2 *,h3 *,h4 *,h5 *,h6 *{font-family:inherit!important;font-weight:inherit!
 .film-hero #hero-title{font-size:clamp(74px,9vw,132px)}
 @media(max-width:760px){.film-hero #hero-title{font-size:clamp(52px,13vw,84px)}.menu-page h1,.gallery-page h1,.team-page h1,.musica-page h1,.cinco-page h1{font-size:clamp(52px,14vw,74px)}}
 
+.menu-page > h1,
 .menu-page .menu-photos figcaption h2 {
   color: #68451f !important;
-  font-size: clamp(30px, 4.5vw, 42px);
+  font-size: clamp(38px, 5.5vw, 54px);
   font-weight: 600 !important;
   text-shadow: none !important;
   -webkit-text-stroke: 0;
 }
 
+.menu-page > h1::after,
 .menu-page .menu-photos figcaption h2::after {
   content: "";
   display: block;
@@ -22,3 +24,9 @@ h1 *,h2 *,h3 *,h4 *,h5 *,h6 *{font-family:inherit!important;font-weight:inherit!
   margin-top: 0.25em;
   background-color: var(--heading-gold);
 }
+
+.menu-page > h1 {font-size:clamp(52px,8vw,88px)}
+@media(max-width:760px){.menu-page > h1 {font-size:clamp(52px,14vw,74px)}}
+
+.menu-page .menu-intro {font-size:clamp(22px,2.2vw,26px);line-height:1.65}
+.menu-page .menu-details {font-size:18px;line-height:1.65}
