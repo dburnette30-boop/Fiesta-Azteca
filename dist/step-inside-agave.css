@@ -29,3 +29,11 @@
 .review-rest .experience .gather-home-logo{display:block;width:280px;max-width:100%;margin:0 0 0 auto}
 .review-rest .experience .gather-home-logo img{display:block;width:100%;height:auto;object-fit:contain}
 .review-rest .experience .gather-home-logo:focus-visible{outline:3px solid #e9bc60;outline-offset:6px}
+
+/* Keep the restaurant phone number beside the sun on every screen. */
+.review-rest .experience .gather-call{display:flex;align-items:center;justify-content:flex-end;gap:18px;margin:20px 0 14px}
+.review-rest .experience .gather-call .gather-sun{flex:0 0 auto;margin:0}
+.review-rest .experience .gather-phone{font-family:Georgia,serif;font-size:clamp(24px,2.5vw,34px);color:#fff0d6;white-space:nowrap;text-decoration:underline;text-underline-offset:6px}
+.review-rest .experience .gather-phone:focus-visible{outline:3px solid #e9bc60;outline-offset:6px}
+@media(max-width:800px){.review-rest .experience .gather-call{gap:12px}.review-rest .experience .gather-call .gather-sun{width:100px;height:100px;font-size:100px}}
+@media(max-width:380px){.review-rest .experience .gather-call{gap:8px}.review-rest .experience .gather-call .gather-sun{width:76px;height:76px;font-size:76px}.review-rest .experience .gather-phone{font-size:23px}}
