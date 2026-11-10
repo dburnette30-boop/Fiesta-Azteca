@@ -24,3 +24,18 @@ h1 *,h2 *,h3 *,h4 *,h5 *,h6 *{font-family:inherit!important;font-weight:inherit!
 
 /* Keep the original bright gold on headings outside the cream menu. */
 body .house-favorites h2,body .house-favorites h3{color:var(--heading-gold)!important}
+
+/* Give the group dining invitation more prominence. */
+#experience .gather h3{font-size:clamp(62px,6.4vw,88px)}
+@media(max-width:800px){#experience .gather h3{font-size:clamp(52px,15vw,68px)}}
+
+/* A slightly brighter gold for the homepage invitation. */
+.film-hero #hero-title{color:#ffda7c!important;-webkit-text-stroke:.2px #a8752d;text-shadow:0 1px 1px #35200e,0 2px 6px #19170e66!important}
+
+/* Matching Instagram corner link above the social section. */
+.social-band .instagram-corner-logo{position:absolute;top:24px;right:5%;display:block;width:56px;height:56px;color:#fff;line-height:0}
+.social-band .instagram-corner-logo svg{display:block;width:100%;height:100%}
+.social-band .instagram-corner-logo:focus-visible{outline:3px solid var(--heading-gold);outline-offset:5px}
+.review-rest .social-band .instagram-corner-logo{top:22px;width:44px;height:44px}
+@media(max-width:800px){.social-band .instagram-corner-logo{top:22px;right:6%;width:48px;height:48px}}
+@media(max-width:760px){.review-rest .social-band .instagram-corner-logo{top:20px;right:5%;width:30px;height:30px}}

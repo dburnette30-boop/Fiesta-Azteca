@@ -11,3 +11,6 @@
 
 /* Add 20 pixels between the Gallery heading and the photos. */
 .gallery-tiles .gallery-grid{margin-top:56px}
+
+/* Bring phone content up to the lower edge of the sun. */
+@media(max-width:600px){.gallery-tiles .gallery-page{padding-top:64px}}

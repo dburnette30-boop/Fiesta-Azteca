@@ -39,3 +39,8 @@ body.cinco-celebration{background:radial-gradient(ellipse at 15% 10%,#38789855,t
 .cinco-celebration .cinco-opening>h1{font-size:clamp(56px,8vw,88px)}
 @media(max-width:760px){.cinco-celebration .cinco-opening>h1{font-size:clamp(44px,10vw,64px)}}
 @media(max-height:500px){.cinco-celebration .cinco-opening>h1{font-size:42px}}
+
+/* Gold surrounds for every enlarged Cinco de Mayo photo. */
+.cinco-celebration #lightbox{background:var(--heading-gold);border:2px solid var(--heading-gold);border-radius:15px;color:#102b40}
+.cinco-celebration #lightbox p{color:#102b40}
+.cinco-celebration #lightbox .close{background:var(--heading-gold);color:#102b40}
