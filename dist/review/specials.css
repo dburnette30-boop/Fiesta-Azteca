@@ -5,3 +5,8 @@
 
 /* Bring phone content up to the lower edge of the sun. */
 @media(max-width:600px){.specials-document .specials-page{padding-top:64px}}
+
+/* Keep the gift card immediately below Thursday, alongside the weekend poster. */
+.specials-thursday-stack{display:flex;flex-direction:column;gap:24px;min-width:0;align-self:start}
+.specials-document .gallery-grid .specials-thursday-stack>figure{margin:0}
+@media(max-width:600px){.specials-thursday-stack{margin-bottom:24px}}
