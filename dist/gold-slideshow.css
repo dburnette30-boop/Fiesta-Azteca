@@ -42,3 +42,7 @@
 @keyframes circle-dissolve{0%,18%{opacity:1}25%,93%{opacity:0}100%{opacity:1}}
 @media(prefers-reduced-motion:reduce){.flavor-slideshow .flavor-icon .circle-photo{animation:none;opacity:0}.flavor-slideshow .flavor-icon .circle-photo-0{opacity:1}}
 
+
+/* Lower the purple and orange drinks within their circular crops to reveal the rims. */
+.flavor-slideshow .flavor-item:nth-child(2) .flavor-icon .circle-photo-1,
+.flavor-slideshow .flavor-item:nth-child(2) .flavor-icon .circle-photo-3{object-position:50% 35%}

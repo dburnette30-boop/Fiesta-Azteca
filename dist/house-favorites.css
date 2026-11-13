@@ -9,5 +9,17 @@
 @media(max-width:600px){.house-favorites{padding:26px 6% 30px}.favorites-tagline{font-size:10px;letter-spacing:1.4px;max-width:300px;margin:0 auto 22px}.favorites-grid{grid-template-columns:1fr;gap:22px;max-width:440px}.house-favorites h3{font-size:28px}.favorite-card p{font-size:16px}.favorites-menu-link{width:100%;max-width:300px}}
 
 /* Carry the same cream tone through the map overlay. */
+.house-favorites{padding:54px 5% 56px}
+.favorites-ornament{margin-bottom:12px}
+.house-favorites h2{margin-bottom:14px}
+.favorites-tagline{margin-bottom:32px}
+.favorites-grid{gap:28px;margin-bottom:34px}
+.favorite-card{padding-bottom:18px}
+.favorite-card img{aspect-ratio:3/2}
+.house-favorites h3{margin:18px 0 10px}
+.favorite-card p{line-height:1.65}
+@media(max-width:760px){.favorites-grid{gap:18px}.favorite-card p{padding:0 6px}}
+@media(max-width:600px){.house-favorites{padding:42px 6% 44px}.favorites-tagline{margin-bottom:28px}.favorites-grid{gap:34px;margin-bottom:30px}}
+
 .review-rest #visit{background:#f6edd9}
 .review-rest #visit .visit-map-background::after{background:linear-gradient(90deg,#f6edd966,transparent 35%,transparent 75%,#f6edd933)}
