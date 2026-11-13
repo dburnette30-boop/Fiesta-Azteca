@@ -1,0 +1,44 @@
+/* Continuous photo procession within the existing gold bar. */
+.flavor-strip.flavor-slideshow{display:block;padding:30px 0;overflow:hidden;position:relative}
+.flavor-slideshow .flavor-window{overflow:hidden;width:100%}
+.flavor-slideshow .flavor-track{display:flex;width:max-content;animation:gold-travel 36s linear infinite;will-change:transform}
+.flavor-slideshow .flavor-group{display:flex;flex:none;width:max(100vw,1200px)}
+.flavor-slideshow .flavor-item{display:flex;flex:0 0 25%;flex-direction:row;align-items:center;justify-content:center;padding:5px 20px;gap:17px;text-align:left;border-right:1px solid #102b4055}
+.flavor-slideshow .flavor-item::after{content:none}
+.flavor-slideshow .flavor-icon{display:block;width:88px;height:88px;flex:0 0 88px}
+.flavor-slideshow .flavor-label{display:block!important;font-size:10px;line-height:1.5;letter-spacing:1px}
+.flavor-slideshow .flavor-label small{display:block;font-size:16px;line-height:1.4;margin-top:8px}
+
+.flavor-slideshow:hover .flavor-track{animation-play-state:paused}
+@keyframes gold-travel{to{transform:translateX(-50%)}}
+@media(max-width:760px){.flavor-strip.flavor-slideshow{padding:32px 0 24px}.flavor-slideshow .flavor-group{width:1000px}.flavor-slideshow .flavor-item{gap:12px;padding:5px 15px}.flavor-slideshow .flavor-icon{width:68px;height:68px;flex-basis:68px}.flavor-slideshow .flavor-label{font-size:9px;letter-spacing:.5px}.flavor-slideshow .flavor-label small{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.flavor-slideshow .flavor-track{animation:none;transform:none}.flavor-slideshow .flavor-window{overflow-x:auto}.flavor-slideshow .flavor-group[aria-hidden]{display:none}}
+
+/* Each moving circle dissolves between its own set of photographs. */
+.flavor-slideshow .flavor-icon{position:relative;isolation:isolate}
+.flavor-slideshow .flavor-icon .circle-photo{position:absolute;inset:0;object-fit:cover;filter:none;object-position:center;animation:circle-dissolve 18s linear infinite}
+/* Four photos per circle: original plus three new images. */
+.flavor-slideshow .flavor-item:nth-child(1) .circle-photo{animation-duration:24s}
+.flavor-slideshow .flavor-item:nth-child(1) .circle-photo-0{animation-delay:0s}
+.flavor-slideshow .flavor-item:nth-child(1) .circle-photo-1{animation-delay:-18s}
+.flavor-slideshow .flavor-item:nth-child(1) .circle-photo-2{animation-delay:-12s}
+.flavor-slideshow .flavor-item:nth-child(1) .circle-photo-3{animation-delay:-6s}
+.flavor-slideshow .flavor-item:nth-child(2) .circle-photo{animation-duration:28s}
+.flavor-slideshow .flavor-item:nth-child(2) .circle-photo-0{animation-delay:0s}
+.flavor-slideshow .flavor-item:nth-child(2) .circle-photo-1{animation-delay:-21s}
+.flavor-slideshow .flavor-item:nth-child(2) .circle-photo-2{animation-delay:-14s}
+.flavor-slideshow .flavor-item:nth-child(2) .circle-photo-3{animation-delay:-7s}
+.flavor-slideshow .flavor-item:nth-child(3) .circle-photo{animation-duration:32s}
+.flavor-slideshow .flavor-item:nth-child(3) .circle-photo-0{animation-delay:0s}
+.flavor-slideshow .flavor-item:nth-child(3) .circle-photo-1{animation-delay:-24s}
+.flavor-slideshow .flavor-item:nth-child(3) .circle-photo-2{animation-delay:-16s}
+.flavor-slideshow .flavor-item:nth-child(3) .circle-photo-3{animation-delay:-8s}
+.flavor-slideshow .flavor-item:nth-child(4) .circle-photo{animation-duration:36s}
+.flavor-slideshow .flavor-item:nth-child(4) .circle-photo-0{animation-delay:0s}
+.flavor-slideshow .flavor-item:nth-child(4) .circle-photo-1{animation-delay:-27s}
+.flavor-slideshow .flavor-item:nth-child(4) .circle-photo-2{animation-delay:-18s}
+.flavor-slideshow .flavor-item:nth-child(4) .circle-photo-3{animation-delay:-9s}
+.flavor-slideshow:hover .circle-photo{animation-play-state:paused}
+@keyframes circle-dissolve{0%,18%{opacity:1}25%,93%{opacity:0}100%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.flavor-slideshow .flavor-icon .circle-photo{animation:none;opacity:0}.flavor-slideshow .flavor-icon .circle-photo-0{opacity:1}}
+
