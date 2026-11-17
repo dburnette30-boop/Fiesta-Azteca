@@ -4,13 +4,12 @@
 .gallery-tiles .gallery-grid figcaption{color:#102b40;text-align:center;margin:12px 8px 0;overflow-wrap:anywhere;text-shadow:none}
 @media(max-width:760px){.gallery-tiles .gallery-grid{display:block}.gallery-tiles .gallery-grid figure{margin:0 0 16px;padding:7px 7px 14px}.gallery-tiles .gallery-grid figure:last-child{margin-bottom:0}}
 
-/* Leave a clear view of the sun above the gallery title. */
-.gallery-tiles::before{top:152px;background-image:linear-gradient(to bottom,#08172500 0%,#0817250a 28%,#08172570 75%),url('assets/gallery-agave-fields.webp');background-position:center top}
-.gallery-tiles .gallery-page{padding-top:140px}
-@media(max-width:1100px){.gallery-tiles::before{top:124px}}
+/* Move the complete page and sunset up together to meet the header. */
+.gallery-tiles::before{top:120px;background-image:linear-gradient(to bottom,#08172500 0%,#0817250a 28%,#08172570 75%),url('assets/gallery-agave-fields.webp');background-position:center top}
+.gallery-tiles .gallery-page{padding-top:108px}
+@media(max-width:1100px){.gallery-tiles::before{top:92px}}
 
-/* Add 20 pixels between the Gallery heading and the photos. */
-.gallery-tiles .gallery-grid{margin-top:56px}
+/* Match the space between the Specials title and its posters. */
+.gallery-tiles .gallery-grid{margin-top:36px}
 
-/* Bring phone content up to the lower edge of the sun. */
-@media(max-width:600px){.gallery-tiles .gallery-page{padding-top:64px}}
+@media(max-width:600px){.gallery-tiles .gallery-page{padding-top:32px}}

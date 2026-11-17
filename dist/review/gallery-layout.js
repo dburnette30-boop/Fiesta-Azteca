@@ -16,6 +16,11 @@
   photos.forEach(photo => observer.observe(photo));
   grid.querySelectorAll('img').forEach(img => img.addEventListener('load', layout));
   document.fonts.ready.then(layout);
-  window.addEventListener('resize', layout);
+  let layoutWidth = grid.clientWidth;
+  window.addEventListener('resize', () => {
+    if (grid.clientWidth === layoutWidth) return;
+    layoutWidth = grid.clientWidth;
+    layout();
+  });
   layout();
 })();
